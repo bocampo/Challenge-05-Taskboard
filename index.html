@@ -34,17 +34,20 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>Task Title</p>
-            <input type="text" class="form-control" id="taskTitle">
+            <form id="taskCreation">
+              <p>Task Title</p>
+              <input type="text" class="form-control" id="taskTitle">
 
-            <label for="taskDueDate" class="form-label">Task Due Date (MM/DD/YYYY)</label>
-            <input autocomplete="off" type="text" class="form-control mb-3" id="taskDueDate" />
+              <label for="taskDueDate" class="form-label">Task Due Date (MM/DD/YYYY)</label>
+              <input autocomplete="off" type="text" class="form-control mb-3" id="taskDueDate" />
 
-            <p>Task Description</p>
-            <input type="text" class="form-control" id="taskDescription">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" onclick="handlePrompt()">Submit</button>
+              <p>Task Description</p>
+              <input type="text" class="form-control" id="taskDescription">
+
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
